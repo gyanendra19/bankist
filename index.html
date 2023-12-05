@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <p class="welcome">Login to get started</p>
+        <div class="logo"><img src="https://bankist.netlify.app/logo.png" alt=""></div>
+        <form class="login">
+            <input type="text" placeholder ="user" id="login-box-1">
+            <input type="number" placeholder="PIN" id="login-box-2">
+            <i id="login-button" class="ri-arrow-right-double-line"></i>
+        </form>
+    </nav>
+
+    <main class="app">
+            <div class="balance">
+                <div class="balance-left">
+                    <p class="current-balance">Current balance</p>
+                    <p class="balance-date"></p>
+                </div>
+                <div class="balance-amount">
+                    <p class="amount">25 987,43€</p>
+                </div>
+            </div>
+
+            <div class="movements">
+                <!-- <div class="movements-row">
+                    <p class="movements-type movements-type-deposit">1 Deposit</p>
+                    <p class="movements-type movements-date">28/01/23</p>
+                    <p class="movements-type movements-amount">12000€</p>
+                </div> -->
+               
+                
+            </div>
+            <div class="operation operation-transfer">
+                <h3>Transfer Money</h3>
+                <form action="" class="form-input">
+                    <input type="text" class="operation-input transfer-account">
+                    <input type="number" class="operation-input transfer-amount">
+                    <button class="transfer-button"><i class="ri-arrow-right-line"></i></button>
+                    <label>Transfer to</label>
+                    <label>Amount</label>
+                </form>
+            </div>
+
+            <div class="operation operation-loan">
+                <h3>Request Loan</h3>
+                <form action="" class="form-input">
+                    <input type="number" class="operation-input  transfer-loan">
+                    <button class="loan-button"><i class="ri-arrow-right-line"></i></button>
+                    <label>Amount</label>
+                </form>
+            </div>
+
+            <div class="operation operation-close">
+                <h3>Close Account</h3>
+                <form action="" class="form-input">
+                    <input type="text" class="operation-input close-account">
+                    <input type="number" class="operation-input close-pin">
+                    <button class="close-button"><i class="ri-arrow-right-line"></i></button>
+                    <label>Confirm user</label>
+                    <label>Confirm Pin</label>
+                </form>
+            </div>
+            <div class="summary">
+                <p>IN <span class="green incoming">23 653,23 €</span> </p>
+                <p>OUT  <span class="red outgoing">23 653,87 €</span> </p>
+                <p>INTEREST <span class="green interest">236,53 €</span> </p>
+                <h5 class="sort-button"><i class="ri-arrow-down-line"></i>SORT</h5>
+            </div>
+            <div class="time-out">
+                <p></p>
+            </div>
+    </main>
+
+
+    <!-- <script src="script.js"></script> -->
+    <script src="script1.js"></script>
+</body>
+</html>
